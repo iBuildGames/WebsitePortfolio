@@ -2,46 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Awesome Game Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasnain — Game Developer Portfolio</title>
+  <meta name="description" content="Hasnain — Game Developer with 4+ years of experience in Unity, multiplayer systems, AR/VR, and mobile game development.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-  <div class="navbar">
-    <a href="#about" class="nav-btn">About</a>
-    <a href="#skills" class="nav-btn">Skills</a>
-    <a href="#showcase" class="nav-btn">ShowCase</a>
-    <a href="#contact" class="nav-btn">Contact</a>
-  </div>
-
-<!-- ABOUT SECTION -->
-<div class="about-wrapper" id="about">
-
-  <div class="about-left">
-    <div class="title">About</div>
-
-    <div class="intro">
-      Hi, I'm Hasnain. A Game Developer with over 4 years of experience.<br>
-      I build mobile games and lead development teams across multiple platforms.<br>
-      Focused on gameplay systems, Multiplayer, and AR / VR workflows.
+  <!-- =================== NAVIGATION =================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">HF<span class="logo-dot">.</span></div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#about"    class="nav-btn" id="nav-about">About</a>
+      <a href="#skills"   class="nav-btn" id="nav-skills">Skills</a>
+      <a href="#showcase" class="nav-btn" id="nav-showcase">Showcase</a>
+      <a href="#gallery"  class="nav-btn" id="nav-gallery">Gallery</a>
+      <a href="#contact"  class="nav-btn nav-contact" id="nav-contact">Contact</a>
     </div>
-  </div>
+  </nav>
 
-  <div class="about-right">
-    <img src="Images/Profile.jpg" alt="Profile" class="about-photo">
-  </div>
+  <!-- =================== HERO / ABOUT =================== -->
+  <section class="hero" id="about">
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-label">Game Developer</p>
+        <h1 class="hero-name">Hi, I'm <span class="highlight">Hasnain</span></h1>
+        <p class="hero-desc">
+          4+ years building mobile games and leading development teams.<br>
+          Specialized in gameplay systems, multiplayer, and AR&nbsp;/&nbsp;VR workflows.
+        </p>
+        <div class="hero-actions">
+          <a href="#showcase" class="btn-primary">View My Work</a>
+          <a href="#contact"  class="btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="photo-ring">
+          <img src="Images/Profile.jpg" alt="Hasnain — Game Developer" class="profile-img">
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
 
-</div>
-
-  <!-- =================== SKILLS SECTION =================== -->
-  <div id="skills-section">
-    <h1 class="skills-title" id="skills">Skills</h1>
+  <!-- =================== SKILLS =================== -->
+  <section id="skills" class="section skills-section">
+    <h2 class="section-title">Skills</h2>
+    <p class="section-sub">Technologies &amp; tools I work with</p>
 
     <div class="skills-grid">
 
       <div class="skill-box">
+        <div class="skill-icon">🌐</div>
         <h3>Multiplayer</h3>
         <ul>
           <li>PUN 2</li>
@@ -53,6 +75,7 @@
       </div>
 
       <div class="skill-box">
+        <div class="skill-icon">📦</div>
         <h3>SDKs</h3>
         <ul>
           <li>Unity Ads</li>
@@ -64,9 +87,10 @@
       </div>
 
       <div class="skill-box">
+        <div class="skill-icon">☁️</div>
         <h3>Backend</h3>
         <ul>
-          <li>Playfab</li>
+          <li>PlayFab</li>
           <li>Hathora</li>
           <li>EdgePlay</li>
           <li>Unity Cloud</li>
@@ -74,45 +98,52 @@
       </div>
 
       <div class="skill-box">
-        <h3>Kits</h3>
+        <div class="skill-icon">🎮</div>
+        <h3>Controller Kits</h3>
         <ul>
           <li>Realistic Car Controller (RCC)</li>
-          <li>Invector Third Person Controller</li>
+          <li>Invector Third Person</li>
           <li>Game Creator 2</li>
-          <li>Opsive Ultimate Character Controller</li>
-          <li>Many more...</li>
+          <li>Opsive UCC</li>
+          <li>Many more…</li>
         </ul>
       </div>
 
       <div class="skill-box">
-        <h3>Advanced Skills</h3>
+        <div class="skill-icon">⚡</div>
+        <h3>Advanced</h3>
         <ul>
-          <li>Data-Oriented Technology Stack (DOTS)</li>
-          <li>HLSL</li>
+          <li>Unity DOTS</li>
+          <li>HLSL Shaders</li>
           <li>Shader Graph</li>
           <li>AR / VR</li>
         </ul>
       </div>
 
       <div class="skill-box">
+        <div class="skill-icon">🗂️</div>
         <h3>Source Control</h3>
         <ul>
           <li>Unity Plastic SCM</li>
           <li>GitHub Desktop</li>
           <li>GitLab</li>
-          <li>Git CLI Workflow</li>
+          <li>Git CLI</li>
         </ul>
       </div>
 
       <div class="skill-box">
+        <div class="skill-icon">🚀</div>
         <h3>Publishing</h3>
         <ul>
-          <li>I have experience in publishing and account management of Google Play and Apple App Store</li>
+          <li>Google Play Console</li>
+          <li>Apple App Store Connect</li>
+          <li>Account Management</li>
         </ul>
       </div>
 
       <div class="skill-box">
-        <h3>Management Tools</h3>
+        <div class="skill-icon">🛠️</div>
+        <h3>Management</h3>
         <ul>
           <li>Trello</li>
           <li>Figma</li>
@@ -121,164 +152,226 @@
       </div>
 
     </div>
-  </div>
+  </section>
 
-  <!-- =================== SHOWCASE SECTION =================== -->
-  <div id="showcase-section">
-    <h1 class="showcase-title" id="showcase">Showcase</h1>
+  <!-- =================== SHOWCASE (VIDEO CAROUSEL) =================== -->
+  <section id="showcase" class="section showcase-section">
+    <h2 class="section-title">Showcase</h2>
+    <p class="section-sub">Click any thumbnail to watch the video</p>
 
     <div class="showcase-outer">
-      <div class="showcase-arrow arrow-left" onclick="scrollLeft()">&#10094;</div>
-      <div class="showcase-arrow arrow-right" onclick="scrollRight()">&#10095;</div>
+      <button class="showcase-arrow arrow-left"  id="arrowLeft"  aria-label="Previous">&#10094;</button>
+      <button class="showcase-arrow arrow-right" id="arrowRight" aria-label="Next">&#10095;</button>
 
-      <div class="showcase-inner" id="loopContainer">
-        <div class="showcase-row" id="loopRow">
 
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="6T8OWmPhCQs">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">A Stratergy game i've worked on.</div>
+      <div class="showcase-viewport" id="showcaseViewport">
+        <div class="showcase-row" id="showcaseRow">
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="c3ETupBtg7M">
+              <img class="thumb-img" alt="Nut Sort Game">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Nut Sort Game</strong>
+              <span>Self published Nut sort game made from scratch.</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="6T8OWmPhCQs">
+              <img class="thumb-img" alt="Strategy Game">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Strategy Game</strong>
+              <span>Real-time strategy game built in Unity</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="NUQtGnHbml8">
+              <img class="thumb-img" alt="Object Highlight Shader">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Object Highlight Shader</strong>
+              <span>Custom HLSL shader for game objects</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="2JiIAUmOSmM">
+              <img class="thumb-img" alt="BlendShape Dynamic System">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>BlendShape Dynamic System</strong>
+              <span>Runtime character morphing system</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="irCDDRMGIbc">
+              <img class="thumb-img" alt="Unity Rigging and Dynamic IK">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Unity Rigging &amp; Dynamic IK</strong>
+              <span>Procedural animation with IK chains</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="Bgrxc8KC6SU">
+              <img class="thumb-img" alt="Character and Environment Showcase">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Character &amp; Environment</strong>
+              <span>High-quality character and environment art</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="bx1bm8uSU7k">
+              <img class="thumb-img" alt="VR Rocket Simulation">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>VR Rocket Simulation</strong>
+              <span>Immersive VR experience with physics</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="XGbsH0tP4bA">
+              <img class="thumb-img" alt="Character Customization System">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Character Customization</strong>
+              <span>Full runtime character customization system</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="dOVrxKk8Oi8">
+              <img class="thumb-img" alt="Robbery Game Prototype">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Robbery Game Prototype</strong>
+              <span>Stealth action gameplay prototype</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="BuTYj7uWSR0">
+              <img class="thumb-img" alt="Grass Shader">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Grass Shader</strong>
+              <span>Custom grass shader with wind and LOD</span>
+            </div>
+          </div>
+
+          <div class="showcase-card">
+            <div class="video-thumb" data-video="NzGQUAnY1Og">
+              <img class="thumb-img" alt="Educational VR Project">
+              <div class="play-btn">▶</div>
+            </div>
+            <div class="showcase-desc">
+              <strong>Educational VR Project</strong>
+              <span>Interactive VR learning environment</span>
+            </div>
+          </div>
+<div class="showcase-card">
+  <div class="video-thumb" data-video="w2-YaFkvbsk">
+    <img class="thumb-img" alt="School Project">
+    <div class="play-btn">▶</div>
   </div>
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="NUQtGnHbml8">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">Object Highlight Shader (HLSL)</div>
+  <div class="showcase-desc">
+    <strong>School Project</strong>
+    <span>A Short school project i did.</span>
   </div>
-
-
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="2JiIAUmOSmM">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">BlendShape Dynamic System Showcase</div>
-  </div>
-
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="irCDDRMGIbc">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">Unity Rigging and Dynamic IKEA</div>
-  </div>
-
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="Bgrxc8KC6SU">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">Character and Envoirment showcase</div>
-  </div>
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="bx1bm8uSU7k">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">VR Rocket Simulation</div>
-  </div>
-
-    <div class="showcase-card">
-    <div class="video-thumb" data-video="XGbsH0tP4bA">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">Character Customization System.</div>
-  </div>
-
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="dOVrxKk8Oi8">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">Robbery Game prototype.</div>
-  </div>
-
-
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="BuTYj7uWSR0">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">A Grass shader that i created.</div>
-  </div>
-
-
-
-
-
-
-
-
-  <div class="showcase-card">
-    <div class="video-thumb" data-video="NzGQUAnY1Og">
-      <img class="thumb-img">
-      <div class="play-btn">▶</div>
-    </div>
-    <div class="showcase-desc">Educational VR Project.</div>
-  </div>
-
-
-
 </div>
-
-      </div>
-
-    </div>
-  </div>
-
-  <!-- =================== GALLERY IMAGE LOOP =================== -->
-<div id="image-loop-section">
-  <h1 class="showcase-title">Gallery</h1>
-
-  <div class="image-loop-outer">
-    <div class="image-loop-inner" id="imageLoopContainer">
-      <div class="image-loop-row" id="imageLoopRow">
-
-        <img src="Images/Domino1.png" class="loop-img">
-        <img src="Images/Bike_2.png" class="loop-img">
-        <img src="Images/Bike_1.png" class="loop-img">
-        <img src="Images/8Ball.png" class="loop-img">
-        <img src="Images/6in1.png" class="loop-img">
-        <img src="Images/Ludo.png" class="loop-img">
-        <img src="Images/Plane_1.png" class="loop-img">
-        <img src="Images/Roullet.png" class="loop-img">
-        <img src="Images/Taxi.png" class="loop-img">
-        <img src="Images/Taxi_2.png" class="loop-img">
-        <img src="Images/Taxi_3.png" class="loop-img">  
-        <img src="Images/Elden.png" class="loop-img">
-        <img src="Images/pow.png" class="loop-img">
-
+        </div>
       </div>
     </div>
+
+    <div class="carousel-dots" id="carouselDots"></div>
+  </section>
+
+  <!-- =================== GALLERY =================== -->
+  <section id="gallery" class="section gallery-section">
+    <h2 class="section-title">Gallery</h2>
+    <p class="section-sub">Screenshots from shipped games</p>
+
+    <div class="gallery-track-outer">
+      <div class="gallery-track-inner">
+        <div class="gallery-track" id="galleryTrack">
+          <img src="Images/Domino1.png" class="gallery-img" alt="Domino game">
+          <img src="Images/Bike_2.png"  class="gallery-img" alt="Bike game">
+          <img src="Images/Bike_1.png"  class="gallery-img" alt="Bike game 2">
+          <img src="Images/8Ball.png"   class="gallery-img" alt="8 Ball pool">
+          <img src="Images/6in1.png"    class="gallery-img" alt="6-in-1 games">
+          <img src="Images/Ludo.png"    class="gallery-img" alt="Ludo game">
+          <img src="Images/Plane_1.png" class="gallery-img" alt="Plane game">
+          <img src="Images/Roulette.png" onerror="this.src='Images/Roullet.png'" class="gallery-img" alt="Roulette game">
+          <img src="Images/Taxi.png"    class="gallery-img" alt="Taxi game">
+          <img src="Images/Taxi_2.png"  class="gallery-img" alt="Taxi game 2">
+          <img src="Images/Taxi_3.png"  class="gallery-img" alt="Taxi game 3">
+          <img src="Images/Elden.png"   class="gallery-img" alt="Elden project">
+          <img src="Images/pow.png"     class="gallery-img" alt="Pow game">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================== CONTACT =================== -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-sub">Let's work together on your next game</p>
+
+    <div class="contact-cards">
+
+      <a href="https://www.linkedin.com/in/muhammad-hasnain-9b4a90292/" target="_blank" rel="noopener" class="contact-card" id="contact-linkedin">
+        <div class="contact-icon">💼</div>
+        <h3>LinkedIn</h3>
+        <span>Muhammad Hasnain</span>
+      </a>
+
+      <a href="mailto:HasnainFayyaz123@gmail.com" class="contact-card" id="contact-email">
+        <div class="contact-icon">✉️</div>
+        <h3>Email</h3>
+        <span>HasnainFayyaz123@gmail.com</span>
+      </a>
+
+      <a href="https://wa.me/923105721162" target="_blank" rel="noopener" class="contact-card" id="contact-whatsapp">
+        <div class="contact-icon">📱</div>
+        <h3>WhatsApp</h3>
+        <span>+92 310 5721162</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- =================== FOOTER =================== -->
+  <footer class="footer">
+    <p>© 2024 Hasnain Fayyaz · Game Developer</p>
+  </footer>
+
+  <!-- =================== VIDEO MODAL =================== -->
+  <div id="video-modal" class="video-modal" role="dialog" aria-modal="true" aria-label="Video player">
+    <div class="video-modal-content">
+      <button class="close-modal" id="closeModal" onclick="closeVideoModal()" aria-label="Close video">✖</button>
+      <iframe id="ytPlayer" frameborder="0" allowfullscreen
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+      </iframe>
+    </div>
   </div>
-</div>
 
   <script src="scripts.js"></script>
-<div id="video-modal" class="video-modal">
-  <div class="video-modal-content">
-    <span class="close-modal" onclick="closeVideoModal()">✖</span>
-    <iframe id="ytPlayer" frameborder="0" allowfullscreen></iframe>
-  </div>
-</div>
-
-<div id="contact-modal" class="custom-modal">
-  <div class="custom-modal-content">
-    <span class="close-contact" onclick="closeContact()">✖</span>
-
-    <h2>Contact Information</h2>
-
-    <p><strong>LinkedIn:</strong> 
-      <a href="https://www.linkedin.com/in/muhammad-hasnain-9b4a90292/" target="_blank">My Linked-in</a>
-    </p>
-    <p><strong>Phone & Whatsapp:</strong> +92 310 5721162</p>
-    <p><strong>Email:</strong> 
-      <a href="mailto:HasnainFayyaz123@gmail.com">HasnainFayyaz123@gmail.com"</a>
-    </p>
-  </div>
-</div>
 </body>
 </html>
